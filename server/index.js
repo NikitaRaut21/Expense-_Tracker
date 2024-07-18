@@ -7,6 +7,7 @@ import User from "./models/User.js";
 import Transaction from './models/Transaction.js';
 import { getHealth } from './controllers/Health.js';
 import { PostSignup,PostLogin } from './controllers/User.js';
+import { PostTransaction } from './controllers/Transaction.js';
 
 const app = express ();
 app.use(express.json());
@@ -28,6 +29,7 @@ app.use(cors());
  })
  app.post("/signup", PostSignup )
 app.post("/login",PostLogin)
+app.post("/transaction",PostTransaction)
 app.get("/health",getHealth)
 
 

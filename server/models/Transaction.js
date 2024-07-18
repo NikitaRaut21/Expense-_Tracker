@@ -1,6 +1,11 @@
 import { Schema, Types, model } from "mongoose";
 
 const transactionSchema = new Schema({
+    title:{
+     type:String,
+     required:true
+    },
+    
     amount: {
         type: Number, // Corrected 'Type' to 'type'
         required: true,
