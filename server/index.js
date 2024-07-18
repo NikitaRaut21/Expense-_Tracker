@@ -6,6 +6,7 @@ dotenv.config()
 import User from "./models/User.js";
 import Transaction from './models/Transaction.js';
 import { getHealth } from './controllers/Health.js';
+import { PostSignup,PostLogin } from './controllers/User.js';
 
 const app = express ();
 app.use(express.json());
@@ -25,35 +26,8 @@ app.use(cors());
      message:`welcome to expense tracker API`
     })
  })
- app.post("/signup", async (req, res) => {
-   const { fullName, email, password, dob } = req.body;
- 
-   const user = new User({
-     fullName,
-     email,
-     password,
-     dob,
-   });
- 
-   try {
-     const savedUser = await user.save();
- 
-     res.json({
-       success: true,
-       message: "Signup successfully",
-       data: savedUser,
-     });
-   } catch (e) {
-     res.json({
-       success: false,
-       message: e.message,
-       data: null,
-     });
-   }
- });
-app.post("/login",(req,res)=>{
-   
-})
+ app.post("/signup", PostSignup )
+app.post("/login",PostLogin)
 app.get("/health",getHealth)
 
 
