@@ -8,6 +8,20 @@
 .user-input:focus, .user-input:active{
     outline: none;
 }
+.auth-heading{
+    text-align: center;
+    color: #43063c;
+}
+
+.auth-form{
+    width: 400px;
+    border: 1px solid black;
+    padding: 20px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 5px;
+    background-color:  #f3aed6;
+}
 .btn{
     background-color: #43063c;
     color: white;
@@ -22,3 +36,10 @@
     transition: 0.3s;
     background-color: #012c2c;
 }
+.auth-link{
+    text-align: center;
+    display: block;
+    margin-top: 10px;
+    font-size: 19px;
+    text-decoration: none;
+  }

@@ -22,7 +22,8 @@ const transactionSchema = new Schema({
     },
     user: {
         type: Types.ObjectId, // Corrected the way to access ObjectId
-        ref: "User"
+        ref: "User",
+        required: true,
     }
 }, {
     timestamps: true,
