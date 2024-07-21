@@ -1,3 +1,6 @@
+body{
+    background-color: #c3b2c1;
+}
 .user-input{
     
     display: block;
@@ -43,3 +46,4 @@
     font-size: 19px;
     text-decoration: none;
   }
+ 

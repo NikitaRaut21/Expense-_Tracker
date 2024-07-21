@@ -1,0 +1,15 @@
+.home-heading{
+    color: #43063c;
+    font-size: 20px;
+}
+.home-greeting{
+    font-size: 25px;
+    margin: 0;
+}
+.home-logout{
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    font-size:26px;
+    cursor: pointer;
+}

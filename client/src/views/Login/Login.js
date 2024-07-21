@@ -8,7 +8,7 @@ function Login() {
   const [email,setEmail]=useState('')
   const [password,setPassword]=useState('')
   
-  const loginNow =async ()=>{
+  const loginNow = async ()=>{
 const response = await axios.post(`${process.env.REACT_APP_API_URI}/login`,{
   email:email,
  password:password
@@ -29,7 +29,7 @@ else{
 }
   }
   return (
-    <div>
+    <div className='main'>
       <h1 className='auth-heading'>User Login</h1>
       <form className='auth-form'>
       <input
