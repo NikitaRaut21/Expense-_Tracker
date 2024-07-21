@@ -7,7 +7,7 @@ import User from "./models/User.js";
 import Transaction from './models/Transaction.js';
 import { getHealth } from './controllers/Health.js';
 import { PostSignup,PostLogin } from './controllers/User.js';
-import { PostTransaction,getTransactions } from './controllers/Transaction.js';
+import { PostTransaction,getTransactions ,deleteTransaction} from './controllers/Transaction.js';
 
 const app = express ();
 app.use(express.json());
@@ -32,6 +32,7 @@ app.post("/login",PostLogin)
 app.post("/transaction",PostTransaction)
 app.get("/transactions",getTransactions )
 app.get("/health",getHealth)
+app.delete("/transaction/:id",deleteTransaction)
 
 
 
