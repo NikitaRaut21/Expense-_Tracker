@@ -54,7 +54,7 @@ setTransactions(allTransactions)
   }, [transactions])
   return (
     <div>
-      <h1 className='home-greeting'>Hello{user.fullName}</h1>
+      <h1 className='home-greeting'>Hello  {user.fullName}</h1>
       <h2 className='home-heading'>Welcome To Expense Tracker</h2>
       <span className='home-logout'onClick={()=>{
         localStorage.clear()

@@ -1,10 +1,14 @@
 .home-heading{
     color: #43063c;
     font-size: 20px;
+    text-align: center;
+    
 }
 .home-greeting{
     font-size: 25px;
     margin: 0;
+    text-align: center;
+    font-family: cursive;
 }
 .home-logout{
     position: fixed;
